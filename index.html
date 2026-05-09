@@ -1,154 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eyoel Issayas | Creative Portfolio</title>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Syne:wght@800&family=Inter:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     <div class="cursor-dot"></div>
     <div class="cursor-outline"></div>
 
     <div class="bg-blobs">
-      <div class="blob b1"></div>
-      <div class="blob b2"></div>
+        <div class="blob b1"></div>
+        <div class="blob b2"></div>
     </div>
 
     <nav>
-      <div class="logo">EYOEL<span>.</span></div>
-      <div class="nav-links">
-        <a href="#about" class="nav-item">About</a>
-        <a href="#projects" class="nav-item">Projects</a>
-        <a href="#certs" class="nav-item">Certs</a>
-        <a href="#contact" class="fancy-btn"
-          >Contact <span class="shimmer"></span
-        ></a>
-      </div>
+        <div class="logo">EYOEL<span>.</span></div>
+        <div class="nav-links">
+            <a href="#about" class="nav-item">About</a>
+            <a href="#projects" class="nav-item">Projects</a>
+            <a href="#certs" class="nav-item">Certs</a>
+            <a href="#contact" class="fancy-btn">Contact <span class="shimmer"></span></a>
+        </div>
     </nav>
 
     <main>
-      <section class="hero" id="about">
-        <p class="reveal tagline">PORTFOLIO 2026</p>
-        <h1 class="reveal">EYOEL<br />ISSAYAS</h1>
-        <p class="intro-text reveal">
-          I am a passionate 10th-grade student at Don Bosco High School focused
-          on programming, robotics, and Game Development. I bridge the gap
-          between complex software logic and mechanical hardware engineering.
-        </p>
-      </section>
+        <section class="hero" id="about">
+            <p class="reveal tagline">PORTFOLIO 2026</p>
+            <h1 class="reveal">EYOEL<br />ISSAYAS</h1>
+            <p class="intro-text reveal">
+                I am a passionate 10th-grade student at Don Bosco High School focused
+                on programming, robotics, and Game Development. I bridge the gap
+                between complex software logic and mechanical hardware engineering.
+            </p>
+        </section>
 
-      <section id="projects">
-        <h2 class="reveal section-title">SELECTED WORK</h2>
-        <div class="grid">
-          <div class="card reveal">
-            <div class="card-num">01</div>
-            <h3>TheWin11OS</h3>
-            <p>
-              A Windows 11 clone featuring DB-Learn and DBxcel. Woreda 1st Place
-              winner.
-            </p>
-            <button class="see-more" onclick="openModal('win11')">
-              See More
-            </button>
-          </div>
-          <div class="card reveal">
-            <div class="card-num">02</div>
-            <h3>RC CAR</h3>
-            <p>
-              ESP-32 powered Bluetooth vehicle built from individual components.
-            </p>
-            <button class="see-more" onclick="openModal('rccar')">
-              See More
-            </button>
-          </div>
-          <div class="card reveal">
-            <div class="card-num">03</div>
-            <h3>TiltPad</h3>
-            <p>
-              Joystick controller presented at Adwa Museum using Tilt Sensors.
-            </p>
-            <button class="see-more" onclick="openModal('tiltpad')">
-              See More
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section id="certs">
-        <h2 class="reveal section-title">CERTIFICATES</h2>
-        <div class="slider-container reveal">
-          <button class="slider-nav prev" onclick="moveSlider(-1)">
-            &#10094;
-          </button>
-          <div class="slider-wrapper">
-            <div class="slider-track">
-              <div class="cert-slide">
-                <img src="img/ideezagateway.png" alt="IDEEZA" />
-                <div class="cert-info">
-                  <h3>IDEZZA GATEWAY CHALLENGE CERTIFICATE</h3>
-                  <p>Certificate for Innovation ideas.</p>
+        <section id="projects">
+            <h2 class="reveal section-title">SELECTED WORK</h2>
+            <div class="grid">
+                <div class="card reveal">
+                    <div class="card-num">01</div>
+                    <h3>TheWin11OS</h3>
+                    <p>A Windows 11 clone featuring DB-Learn and DBxcel. Woreda 1st Place winner.</p>
+                    <button class="see-more" onclick="openModal('win11')">See More</button>
                 </div>
-              </div>
-              <div class="cert-slide">
-                <img src="img/ideezaambassador.jpg" alt="IDEEZA" />
-                <div class="cert-info">
-                  <h3>IDEZZA AMBASSADOR HACKATHON</h3>
-                  <p>Certificate for hackathon participation.</p>
+                <div class="card reveal">
+                    <div class="card-num">02</div>
+                    <h3>RC CAR</h3>
+                    <p>ESP-32 powered Bluetooth vehicle built from individual components.</p>
+                    <button class="see-more" onclick="openModal('rccar')">See More</button>
                 </div>
-              </div>
-              <div class="cert-slide">
-                <img
-                  src="img/1stRecommendationLetter.jpg"
-                  alt="Google UX Design"
-                />
-              </div>
-              <div class="cert-slide">
-                <img
-                  src="img/2ndRecommendationLetter.jpg"
-                  alt="Robotics Award"
-                />
-                <div class="cert-info"></div>
-              </div>
-              <div class="cert-slide">
-                <img src="img/DNGcertificate.jpg" alt="DNG" />
-                <div class="cert-info">
-                  <h3>Don Bosco Next Generation Participation Certificate</h3>
-                  <p>Certificate For Contribution in my school ICT Group</p>
+                <div class="card reveal">
+                    <div class="card-num">03</div>
+                    <h3>TiltPad</h3>
+                    <p>Joystick controller presented at Adwa Museum using Tilt Sensors.</p>
+                    <button class="see-more" onclick="openModal('tiltpad')">See More</button>
                 </div>
-              </div>
             </div>
-          </div>
-          <button class="slider-nav next" onclick="moveSlider(1)">
-            &#10095;
-          </button>
-        </div>
-      </section>
+        </section>
 
-      <section id="contact">
-        <h2 class="reveal section-title">CONTACT ME</h2>
-        <a href="mailto:eyoelissayas@gmail.com" class="reveal email-link"
-          >eyoelissayas@gmail.com</a
-        >
-        <p class="reveal contact-sub">+251 978 368 230</p>
-      </section>
+        <section id="certs">
+            <h2 class="reveal section-title">CERTIFICATES</h2>
+            <div class="slider-container reveal">
+                <button class="slider-nav prev" onclick="moveSlider(-1)">&#10094;</button>
+                <div class="slider-wrapper">
+                    <div class="slider-track">
+                        <div class="cert-slide">
+                            <img src="img/ideezagateway.png" alt="IDEEZA" />
+                            <div class="cert-info">
+                                <h3>IDEZZA GATEWAY CHALLENGE CERTIFICATE</h3>
+                                <p>Certificate for Innovation ideas.</p>
+                            </div>
+                        </div>
+                        <div class="cert-slide">
+                            <img src="img/ideezaambassador.jpg" alt="IDEEZA" />
+                            <div class="cert-info">
+                                <h3>IDEZZA AMBASSADOR HACKATHON</h3>
+                                <p>Certificate for hackathon participation.</p>
+                            </div>
+                        </div>
+                        <div class="cert-slide">
+                            <img src="img/1stRecommendationLetter.jpg" alt="Recommendation" />
+                        </div>
+                        <div class="cert-slide">
+                            <img src="img/2ndRecommendationLetter.jpg" alt="Award" />
+                        </div>
+                        <div class="cert-slide">
+                            <img src="img/DNGcertificate.jpg" alt="DNG" />
+                            <div class="cert-info">
+                                <h3>Don Bosco Next Generation Participation Certificate</h3>
+                                <p>Certificate For Contribution in my school ICT Group</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-nav next" onclick="moveSlider(1)">&#10095;</button>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="reveal section-title">CONTACT ME</h2>
+            <a href="mailto:eyoelissayas@gmail.com" class="reveal email-link">eyoelissayas@gmail.com</a>
+            <p class="reveal contact-sub">+251 978 368 230</p>
+        </section>
     </main>
 
     <div id="projectModal" class="modal">
-      <div class="modal-content">
-        <span class="close-modal" onclick="closeModal()">&times;</span>
-        <div id="modalBody"></div>
-      </div>
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div id="modalBody"></div>
+        </div>
     </div>
 
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
